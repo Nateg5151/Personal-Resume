@@ -1,0 +1,253 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+   
+}
+svg{
+	width: 25px;
+	height: 35px;
+}
+nav ul{
+	list-style: none;
+	border-top:6px solid #5b5b5b;
+	background: #4a4a4a; 
+	position: fixed; top: 0; width: 100%;
+	
+
+}
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	text-align: center;
+	color: #5b5b5b;
+}
+
+nav ul li a:hover{
+	color: #e0e2db;
+
+}
+
+.logo{
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-size: 40px;
+	background: #a3a3a3;
+	color:#191716;
+	font-style: italic;
+	
+
+}
+
+
+
+
+/* CSS */
+.button-30 {
+	align-items: center;
+	appearance: none;
+	background-color: #989898;
+	border-radius: 4px;
+	border-width: 0;
+	box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+	box-sizing: border-box;
+	color: #000000;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "JetBrains Mono",monospace;
+	height: 48px;
+	justify-content: center;
+	line-height: 1;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	transition: box-shadow .15s,transform .15s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	will-change: box-shadow,transform;
+	font-size: 18px;
+  }
+  
+  .button-30:focus {
+	box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+	box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+	transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+	box-shadow: #D6D6E7 0 3px 7px inset;
+	transform: translateY(2px);
+  }
+
+@media screen and (min-width: 576px){
+	nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	nav ul li{
+		flex: 1 0 auto;
+
+	}
+	.logo{
+		display: block;
+		text-align: center;
+	}
+    .logo svg{
+    	display: none;
+
+    }
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #34a38f;
+    
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #6868a8;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+	top: 230px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social a{
+    font-size: 30px;
+    color: #424242;
+    margin-right: 20px;
+}
+
+.social a:hover{
+    color: orange;
+}
+
+#contact{
+	
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/image6.jpg);
+	background: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: baseline;
+	padding:60px;
+}
+#contact h1{
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+#contact button{
+	border: 2px solid #e6af2e;
+	color:#e6af2e;
+	padding: 10px;
+	background: transparent;
+	font-size: 20px;
+	text-transform: uppercase;
+
+
+}
+#contact button:hover{
+	color:#fff;
+	background: #e6af2e;
+}
+
+footer{
+	background: #191716;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+.text-network{
+	text-transform: uppercase;
+	font-size: 15px;
+	color:#e0e2db;
+	margin-bottom: 20px;
+	padding-bottom: 10px; 
+
+
+}
+.font-fa svg{
+	margin-right: 10px;
+	background-color:#e0e2db;
+	transition: transform 2s;
+	border-radius: 50%; 
+	width: 40px;
+	height: 50px;
+
+}
+.font-fa svg:hover{
+	background:#e6af2e;
+	transform: translateY(-15px);
+}
